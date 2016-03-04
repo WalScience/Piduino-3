@@ -34,13 +34,13 @@ void loop()
   Serial.println(nunchuk.cButton, DEC);
  
 
-  //if (nunchuk.zButton == HIGH) {    
+  if (nunchuk.zButton == HIGH) {    
 
-   // if (ChangementEtat == 1) {
+    if (ChangementEtat == 1) {
 
-//CapteurBas=!CapteurBas;
+CapteurBas=!CapteurBas;
 
-     /* ChangementEtat=0;
+     ChangementEtat=0;
 
       digitalWrite(led, CapteurBas); 
      delay(100);
@@ -51,6 +51,6 @@ void loop()
   else {
 
     ChangementEtat=1;
-  }*/
+  }
 
 }
